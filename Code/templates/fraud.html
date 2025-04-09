@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Blockchain Verification Failed</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: "Raleway", sans-serif;
+      height: 100%;
+      background: url('https://images.pexels.com/photos/5935792/pexels-photo-5935792.jpeg') no-repeat center center/cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .header {
+      padding: 20px;
+      font-size: 2rem;
+      color: white;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+    }
+    .error-message {
+      font-size: 4rem;
+      background: rgba(183, 221, 230, 0.8);
+      color: black;
+      padding: 20px 50px;
+      border-radius: 20px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+    .footer {
+      padding: 10px;
+      background: rgba(255, 255, 255, 0.9);
+      color: #007bff;
+      border-radius: 10px;
+    }
+    .button {
+      background-color: #FF6347; /* Red */
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">Blockchain Verifier</div>
+<div class="error-message">Verification Failed</div>
+
+<!-- Button to go back to Home page -->
+<div style="text-align: center; margin-top: 20px;">
+  <a href="{{ url_for('welcome') }}" class="button">Back to Home</a>
+</div>
+
+<div class="footer">Powered by Blockchain</div>
+
+</body>
+</html>
